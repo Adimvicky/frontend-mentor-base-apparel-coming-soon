@@ -1,0 +1,134 @@
+:root {
+	--color-red-des : hsl(0, 36%, 70%);
+	--color-red-soft : hsl(0, 93%, 68%);
+	--color-red-grey : hsl(0, 6%, 24%);
+	--gradient-1 : linear-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+	--gradient-2 : linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+}
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+body {
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	font-family: 'Josefin Sans',sans-serif;
+}
+
+/* LAYOUT */
+.container {
+	padding: 5rem 10rem 0 12.5rem;
+	position: relative;
+	background-image: url(./images/bg-pattern-desktop.svg), var(--gradient-1);
+	background-repeat: no-repeat;
+
+}
+.section-hero {
+	display: flex;
+	/* align-items: center; */
+}
+
+.section-hero__text {
+	display: flex;
+	flex-direction: column;
+	padding-top : 10rem;
+	max-width: 45rem;
+	height: 70rem;
+
+	position: relative;
+}
+
+.section-hero__figure {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+
+
+
+/* COMPONENTS */
+.h1 {
+	display: block;
+	font-size: 5rem;
+	text-transform: uppercase;
+	margin : .5rem 0;
+	letter-spacing: 2rem;
+}
+.p {
+	margin: 2rem 0 5rem 0;
+	line-height: 1.8;
+}
+.form-group {
+	display: flex;
+	align-items: center;
+}
+
+.form-group > * {
+	border-radius: 100px;
+	border : none;
+	outline: none;
+}
+
+.form-group__input {
+	width: 85%;
+	padding: 1.5rem 3rem;
+	border : .5px solid var(--color-red-des);
+	background-color: transparent;
+	font-family: inherit;
+	font-size: inherit;
+}
+.form-group__input::-webkit-input-placeholder {
+	color: var(--color-red-des);
+	opacity: .8;
+}
+.form-group__btn {
+	padding : 1.25rem 4rem;
+	margin-left: -4rem;
+	background-image: var(--gradient-2);
+}
+
+/* UTILITIES */
+.text-light {
+	font-weight: 300;
+}
+.text-medium {
+	font-weight: 400;
+}
+.text-bold {
+	font-weight: 600;
+}
+.text-color-light {
+	color : var(--color-red-des);
+}
+.text-color-medium {
+	color: var(--color-red-soft);
+}
+.text-color-dark {
+	color: var(--color-red-grey);
+}
+.desktop-logo {
+
+}
+
+footer {
+	position: absolute;
+	bottom: 1rem;
+
+	text-align: center;
+	font-size: 1.4rem;
+	opacity: .75;
+
+}
+.attribution a {
+	color: var(--color-red-soft);
+}
